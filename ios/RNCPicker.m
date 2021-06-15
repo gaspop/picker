@@ -111,4 +111,10 @@ numberOfRowsInComponent:(__unused NSInteger)component
   }
 }
 
+- (void)didAddSubview:(UIView *)subview
+{
+    [subview didAddSubview:subview];
+    subview.backgroundColor = [UIColor clearColor];
+}
+
 @end
